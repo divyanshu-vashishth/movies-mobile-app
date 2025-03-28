@@ -2,8 +2,13 @@
 
 A React Native (expo) mobile application that allows users to search for movies, view details, and save their favorites. Built with Expo and using the OMDB API.
 
-!['home page'](/assets/snapshot-1.png?raw=true "home page")
-!['movies page'](/assets/snapshot-2.png?raw=true "movies page")
+Home Page             |  Movies Page
+:-------------------------:|:-------------------------:
+!['home page'](https://github.com/divyanshu-vashishth/movies-mobile-app/blob/93d5359cc5bcbf58898f0916f33f0b7c0843d5cc/assets/images/snapshot-1.png)  |  !['movies page'](https://github.com/divyanshu-vashishth/movies-mobile-app/blob/93d5359cc5bcbf58898f0916f33f0b7c0843d5cc/assets/images/snapshot-2.png)
+
+
+
+
 
 ## Features
 
