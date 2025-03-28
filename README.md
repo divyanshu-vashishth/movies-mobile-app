@@ -1,50 +1,81 @@
-# Welcome to your Expo app 👋
+# Movie Search App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native (expo) mobile application that allows users to search for movies, view details, and save their favorites. Built with Expo and using the OMDB API.
 
-## Get started
+!['home page'](/assets/snapshot-1.png?raw=true "home page")
+!['movies page'](/assets/snapshot-2.png?raw=true "movies page")
 
-1. Install dependencies
+## Features
 
+- Search movies by title
+- View movie details including poster, title, year, genre, and ratings
+- Load more movies functionality
+- Save favorite movies
+- Responsive design with proper error handling
+- Infinite scrolling with load more button
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (v18 or newer)
+- pnpm or npm or yarn or bun
+- Expo CLI (`npm install -g expo-cli`)
+- Android Studio (for Android emulator) iOS Simulator (Mac only) or 
+
+## Installation
+
+1. Clone the repository:
    ```bash
-   npm install
+   git clone <repository-url>
+   cd movies-app
    ```
 
-2. Start the app
-
+2. Install dependencies:
    ```bash
-    npx expo start
+   pnpm install
+   # or
+   npm install 
+    or yarn install or bun install
    ```
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+4. Start the development server:
+   ```bash
+   pnpm run android
+   # or
+   pnpm run ios
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Running the App
 
-## Get a fresh project
+After starting the development server:
 
-When you're ready, run:
+- Press `i` to run on iOS simulator (Mac only)
+- Press `a` to run on Android emulator
+- Scan the QR code with Expo Go app on your physical device
 
-```bash
-npm run reset-project
+## Project Structure
+
+```
+movies-app/
+├── app/                    # App screens and navigation
+│   ├── index.tsx          # Home screen with search
+│   └── movie/[id].tsx     # Movie details screen
+├── lib/                    # Shared utilities
+│   ├── api.ts             # API calls
+│   ├── hooks.ts           # Custom hooks
+│   ├── types.ts           # TypeScript types
+│   └── storage.ts         # Async Storage helper
+├── components/            # Reusable components
+└── assets/               # Images and other static files
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Technologies Used
 
-## Learn more
+- React Native
+- Expo
+- TypeScript
+- NativeWind (TailwindCSS)
+- AsyncStorage
+- OMDB API
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
